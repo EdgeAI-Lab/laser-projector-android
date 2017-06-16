@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">laser_show</string>
+    <string name="app_id">57032f50</string>
+    <string name="text_begin">请开始说话…</string>
+    <string name="cmd">命令</string>
+    <string name="click_speech">点击说话</string>
+    <string name="connect_bt">连接蓝牙</string>
+    <string name="help">获取帮助</string>
+    <string name="action_settings">Settings</string>
+    <string name="stop">停止</string>
+    <string name="forward">前进</string>
+    <string name="back">后退</string>
+    <string name="left">左转</string>
+    <string name="right">右转</string>
+
+</resources>

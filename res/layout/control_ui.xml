@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="10"
+    	android:orientation="horizontal">
+     <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红光"
+            android:textSize="35sp"
+            android:layout_marginBottom="20dp" />
+
+        <Switch
+            android:id="@+id/red_light_power_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="红光关闭中"  
+       		android:textOn="红光开启中"
+       		android:layout_marginBottom="20dp" />
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            
+           <Button
+            android:id="@+id/red_light_dac_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="红光DAC设置" /> 
+            
+           <TextView 
+            android:id="@+id/red_light_dac_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:layout_marginRight="10dp"
+            android:text="DAC" />
+            
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道1" />
+
+            <ImageView
+                android:id="@+id/red_light_channel_1_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/red_light_channel_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道2" />
+
+            <ImageView
+                android:id="@+id/red_light_channel_2_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/red_light_channel_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道3" />
+
+            <ImageView
+                android:id="@+id/red_light_channel_3_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/red_light_channel_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道4" />
+
+            <ImageView
+                android:id="@+id/red_light_channel_4_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/red_light_channel_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道5" />
+
+            <ImageView
+                android:id="@+id/red_light_channel_5_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/red_light_channel_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道6" />
+
+            <ImageView
+                android:id="@+id/red_light_channel_6_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/red_light_channel_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绿光"
+            android:textSize="35sp"
+            android:layout_marginBottom="20dp" />
+
+        <Switch
+            android:id="@+id/green_light_power_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="绿光关闭中"  
+       		android:textOn="绿光开启中"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+        
+        
+        <Button
+            android:id="@+id/green_light_dac_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="绿光DAC设置" />
+        
+        <TextView 
+            android:id="@+id/green_light_dac_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:layout_marginRight="10dp"
+            android:text="DAC" />
+        
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道1" />
+
+            <ImageView
+                android:id="@+id/green_light_channel_1_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/green_light_channel_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+        
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道2" />
+
+            <ImageView
+                android:id="@+id/green_light_channel_2_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/green_light_channel_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道3" />
+
+            <ImageView
+                android:id="@+id/green_light_channel_3_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/green_light_channel_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+        
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道4" />
+
+            <ImageView
+                android:id="@+id/green_light_channel_4_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/green_light_channel_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+        
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道5" />
+
+            <ImageView
+                android:id="@+id/green_light_channel_5_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/green_light_channel_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+        
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道6" />
+
+            <ImageView
+                android:id="@+id/green_light_channel_6_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/green_light_channel_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+        
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道7" />
+
+            <ImageView
+                android:id="@+id/green_light_channel_7_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/green_light_channel_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝光"
+            android:layout_marginBottom="20dp" 
+             android:textSize="35sp" />
+
+        <Switch
+            android:id="@+id/blue_light_power_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="蓝光关闭中"  
+       		android:textOn="蓝光开启中"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+        
+        <Button 
+            android:id="@+id/blue_light_dac_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="蓝光DAC设置" 
+            android:layout_marginBottom="20dp" />
+        
+        <TextView 
+            android:id="@+id/blue_light_dac_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:layout_marginRight="10dp"
+            android:text="DAC" />
+        
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/bl_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道1" />
+
+            <ImageView
+                android:id="@+id/blue_light_channel_1_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/blue_light_channel_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/bl_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道2" />
+
+            <ImageView
+                android:id="@+id/blue_light_channel_2_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/blue_light_channel_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+        
+                <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温度"
+            android:textSize="35sp" 
+            android:layout_marginBottom="20dp"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度1" />
+
+
+            <EditText
+                android:id="@+id/temp_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度1" />
+
+
+            <EditText
+                android:id="@+id/temp_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="532绿光"
+            android:layout_marginBottom="20dp" 
+            android:textSize="35sp" />
+
+        <Switch
+            android:id="@+id/green532_light_power_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="532绿光关闭中"  
+       		android:textOn="532绿光开启中"
+            android:layout_marginBottom="20dp" />
+
+         <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+        
+        <Button 
+            android:id="@+id/green532_light_dac_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="532绿光DAC设置" 
+            android:layout_marginBottom="20dp" />
+        
+        <TextView 
+            android:id="@+id/green532_light_dac_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:layout_marginRight="10dp"
+            android:text="DAC" />
+        
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/l532_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道1" />
+
+            <ImageView
+                android:id="@+id/green532_light_channel_1_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_off" />
+
+            <EditText
+                android:id="@+id/green532_light_channel_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/all_power_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="所有电源关闭中"  
+       		android:textOn="所有电源开启中"
+            android:layout_marginBottom="20dp" />
+        
+    </LinearLayout>       
+        
+        
+    </LinearLayout> <!--  -->
+    
+    <!-- 
+    
+    	<LinearLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	android:orientation="horizontal">
+    
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Hello"/>
+	    
+	</LinearLayout>
+    
+     -->
+
+</LinearLayout>
